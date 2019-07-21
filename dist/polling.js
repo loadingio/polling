@@ -43,7 +43,7 @@ var slice$ = [].slice;
             return l.h = setTimeout(run, d);
           }
         });
-        return run() || setTimeout(run, d);
+        return run();
       });
     };
     func.stop = function(p){

@@ -17,7 +17,7 @@
           ret = f.apply @, args
           if ret => return func.stop ret
           if pool.visible and l.on => l.h = setTimeout run, d
-        run! or setTimeout(run, d)
+        run! # or, setTimeout(run, d) if we want to delay execution
     func.stop = (p) ->
       clearTimeout(l.h)
       if pool.list.indexOf(l.run) >= 0 => pool.list.splice(pool.list.indexOf(l.run), 1)
