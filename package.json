@@ -1,0 +1,20 @@
+{
+  "author": "Kirby Wu",
+  "name": "polling.js",
+  "license": "MIT",
+  "description": "tiny polling library",
+  "version": "0.0.1",
+  "homepage": "https://github.com/loadingio/polling",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loadingio/polling"
+  },
+  "engines": {
+    "node": ">=0.12.6",
+    "npm": ">=1.2.2"
+  },
+  "devDependencies": {
+    "LiveScript": ">=1.2.0",
+    "uglify-js": "=3.2.0"
+  }
+}

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+mkdir -p dist
+echo "build src/polling.ls -> dist/polling.js ..."
+./node_modules/.bin/lsc -cbp src/polling.ls > dist/polling.js
+echo "minifying polling.js ..."
+./node_modules/.bin/uglifyjs dist/polling.js > dist/polling.min.js
+echo "done."
+
