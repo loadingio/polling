@@ -6,6 +6,7 @@
     list: []
 
   polling = (f, d = 1000) ->
+    if typeof(f) == \number => [f,d] = [d,f]
     if document? and !vh.inited => document.addEventListener(\visibilitychange, vh, false)
     pool.inited = true
     l = {}

@@ -10,7 +10,7 @@ Promise based, vanilla JS polling library. Features:
 
 ## Usage
 
-To periodically invoke a function with certain interval(in millisecond): `polling(function, interval)()`
+To periodically invoke a function with certain interval(in millisecond): `polling(function, interval)()` or `polling(interval, function)()`
 
 example:
 

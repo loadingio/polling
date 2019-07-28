@@ -15,8 +15,11 @@ var slice$ = [].slice;
     list: []
   };
   polling = function(f, d){
-    var l, func;
+    var ref$, l, func;
     d == null && (d = 1000);
+    if (typeof f === 'number') {
+      ref$ = [d, f], f = ref$[0], d = ref$[1];
+    }
     if ((typeof document != 'undefined' && document !== null) && !vh.inited) {
       document.addEventListener('visibilitychange', vh, false);
     }
