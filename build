@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
+rm -rf dist
 mkdir -p dist
-echo "build src/polling.ls -> dist/polling.js ..."
-./node_modules/.bin/lsc -cbp src/polling.ls > dist/polling.js
-echo "minifying polling.js ..."
-./node_modules/.bin/uglifyjs dist/polling.js > dist/polling.min.js
+echo "build src/index.ls -> dist/index.js ..."
+./node_modules/.bin/lsc -cp --no-header src/index.ls > dist/index.js
+echo "minifying index.js ..."
+./node_modules/.bin/uglifyjs dist/index.js -c -m > dist/index.min.js
 echo "done."
 
