@@ -1,9 +1,9 @@
 {
-  "author": "Kirby Wu",
-  "name": "polling.js",
+  "author": "zbryikt",
+  "name": "@loadingio/polling",
   "license": "MIT",
   "description": "tiny polling library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/loadingio/polling",
   "repository": {
     "type": "git",
