@@ -1,4 +1,4 @@
-# polling.js
+# @loadingio/polling
 
 Promise based, vanilla JS polling library. Features:
 
