@@ -2,6 +2,8 @@
   "author": "zbryikt",
   "name": "@loadingio/polling",
   "license": "MIT",
+  "browser": "dist/index.min.js",
+  "main": "dist/index.min.js",
   "description": "tiny polling library",
   "version": "0.0.2",
   "homepage": "https://github.com/loadingio/polling",
